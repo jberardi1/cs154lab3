@@ -12,7 +12,7 @@ a = pyrtl.Input(bitwidth=1, name='a')
 b = pyrtl.Input(bitwidth=1, name='b')
 c = pyrtl.Input(bitwidth=1, name='c')
 d = pyrtl.Input(bitwidth=1, name='d')
-e = pyrtl.Input(bitwidth=1, name='e')
+e = pyrtl.Input(bitwidth=2, name='e')
 
 # Declare control inputs
 s = pyrtl.Input(bitwidth=3, name='s')
