@@ -12,14 +12,14 @@ a = pyrtl.Input(bitwidth=1, name='a')
 b = pyrtl.Input(bitwidth=1, name='b')
 c = pyrtl.Input(bitwidth=1, name='c')
 d = pyrtl.Input(bitwidth=1, name='d')
-e = pyrtl.Input(bitwidth=2, name='e')
+e = pyrtl.Input(bitwidth=1, name='e')
 
 # Declare control inputs
 s = pyrtl.Input(bitwidth=3, name='s')
 
 # Declare outputs 
 # < add your code here >
-o = pyrtl.Output(bitwidth=1, name = 'o')
+o = pyrtl.Output(bitwidth=2, name = 'o')
 
 # Describe your 5:1 MUX implementation
 # < add your code here >
@@ -35,7 +35,7 @@ with pyrtl.conditional_assignment:
     with s==4:   #int('100',2):  #100
         o |= e
     with pyrtl.otherwise:
-        o = 0
+        o |= 0
         
     # with s==110: #101
  #       o = 0
