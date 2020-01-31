@@ -1,7 +1,7 @@
 ### Implementing and simulating multiplexers in PyRTL ###
 
 import pyrtl
-
+#gradescope not seeing update
 # Now, it is time to build and simulate (for 16 cycles) a 3-bit 5:1 MUX.
 # You can develop your design using either Boolean gates as above or PyRTL's
 # conditional assignment.
