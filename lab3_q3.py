@@ -35,7 +35,7 @@ with pyrtl.conditional_assignment:
     with s==4:   #int('100',2):  #100
         o |= e
     with pyrtl.otherwise:
-        o |= 0
+        o |= e
         
     # with s==110: #101
  #       o = 0
